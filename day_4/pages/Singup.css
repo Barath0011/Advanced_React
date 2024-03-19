@@ -1,0 +1,70 @@
+/* Login.css */
+.w {
+    width: 300px; /* Adjust width as needed */
+    margin: 50px auto; /* Center the box horizontally */
+    padding: 20px;
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: transparent;/* Light background color */
+    border: 2px solid rgba( 255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba( 255, 255, 255, .2);
+  }
+
+ .back{
+  background-image:url('../assets/images/3.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+ }
+  
+  .input{
+    margin-bottom: 15px;
+    width: calc(100% - 40px);
+    height: 25px;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 95px;
+    font-size: 16px;
+
+  }
+  
+  .button {
+    padding: 9px;
+  }
+  .register{
+    margin-top: -20px; 
+  }
+  .remember-container {
+    display: flex; /* Arrange elements horizontally */
+    justify-content: space-between; /* Space evenly */
+    margin-bottom: 15px;
+  }
+  
+  .register-container {
+    text-align: center; /* Center text for "Register" link */
+  }
+  
+.input input{
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border :2px solid rgba( 255, 255, 255, .2);
+  border-radius: 40px;
+  color: black;
+}
+
+.input input::placeholder{
+  color:black;
+}
