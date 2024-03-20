@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home-body{
+    min-height: 100vh;
+}
+
+.home-box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: var(--backgroundColor);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0px;
+}
+
+.home-box:hover input{
+    width: 400px;
+    outline: 1px solid var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 30px;
+    padding: 10px 10px;
+}
+
+.home-box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.home-box a i{
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Home Grid */
+.home-grid{
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    width: 100%;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: start;
+    margin-top: 50px;
+    
+}
+
+.home-grid:last-child{
+    margin-bottom: 30px;
+}
+
+.home-grid-item{
+    background-color: var(--text-color);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+    transition: 0.2s;
+    padding-bottom: -5px;
+}
+
+.home-grid-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+}
+
+.home-card-img{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.home-card
+{
+    width: auto;
+}
+
+.home-card-content{
+    padding: 2rem 1rem;
+    backdrop-filter: blur(5px);
+}
+.home-card-content img{
+    width: 15rem;
+    padding-right: 1.5rem;
+    
+}
+
+.home-card-header{
+    font-size: 2rem;
+    font-weight: 550;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.home-card-text{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.4;
+    color: var(--backgroundColor);
+    margin-bottom: 2.5rem;
+}
+
+.home-card-button{
+    display: block;
+    width: 50%;
+    border: none;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--primary);
+    text-transform: capitalize;
+    border-radius: 10px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.home-card-button span{
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.home-card-button:hover{
+    background-color: var(--primary);
+    color: var(--backgroundColor);
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .home-grid{
+        padding: 10px 10px;
+        grid-gap: 3rem;
+    }
+
+    .home-card-button{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: var(--primary);
+        color: var(--backgroundColor);
+    }
+
+    .home-card-text{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 994px){
+    .home-box{
+        display: none;
+    }
+
+    .home-grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .home-card-button{
+        width: 100%;
+        background-color: var(--primary);
+        color: var(--backgroundColor);
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .home-box{
+        display: none;
+    }
+
+    .home-grid{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .home-card-button{
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300px){
+    .home-grid{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .home-card-button{
+        width: 50%;
+    }
+}
+
+nav{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo a{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links a{
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--lightOne);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover{
+    color: var(--primary);
+}
+
+.version-upgrade:hover{
+    color: var(--lightOne) !important;
+}
+
+.menu-pricing{
+    color: var(--warning);
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.links .signupbtn{
+    padding: 0.5rem 2rem;
+    color: var(--backgroundColor) !important;
+    background-color: var(--text-color);
+    border-radius: 5px;
+}
+
+.bg{
+    background-image: url('../assets/images/p1.jpg');
+}
